@@ -82,7 +82,7 @@ public class ApplicationService extends Service implements SensorEventListener {
     }
 
     private void setAppropriateRingerMode() {
-        Log.i(TAG, "setAppropriateRingerMode called: lux is " + lux + " screen status is " + isScreenOn);
+//        Log.i(TAG, "setAppropriateRingerMode called: lux is " + lux + " screen status is " + isScreenOn);
 //        if (lux > LUX_IN_POCKET && !isScreenOn)
         if (lux > LUX_IN_POCKET)
                 audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
